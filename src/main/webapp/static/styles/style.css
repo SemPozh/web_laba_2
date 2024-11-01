@@ -370,23 +370,32 @@ table#results tbody tr td:last-child {
 
 /* Footer */
 
-#footer-table{
+#footer{
     display: flex;
     grid-template-columns: 80% 20%;
     /*height: 124px;*/
     padding: 0 20px;
 }
 
-#footer-table p{
+#footer p{
     margin-top: 10px;
     /*vertical-align: bottom;*/
 }
 
-#footer-table div:last-child{
+#footer div:last-child{
     padding-left: 25%;
 }
 
-#footer-table img{
+#footer img{
     width: 100px;
 }
 
+
+
+a.back_button{
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    color: black;
+    border-radius: 10px;
+}

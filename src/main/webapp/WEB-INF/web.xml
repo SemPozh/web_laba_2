@@ -15,12 +15,22 @@
 
     <servlet>
         <servlet-name>IndexJSP</servlet-name>
-        <jsp-file>/index.jsp</jsp-file>
+        <jsp-file>/templates/index.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>IndexJSP</servlet-name>
         <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShotResultJSP</servlet-name>
+        <jsp-file>/templates/shot_result.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShotResultJSP</servlet-name>
+        <url-pattern>/shot_result.jsp</url-pattern>
     </servlet-mapping>
 
 

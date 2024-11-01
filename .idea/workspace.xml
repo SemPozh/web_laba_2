@@ -5,27 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33a0530b-837c-40f1-b485-d1311d3e0339" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/exceptions/ValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/model/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/servlets/AreaCheckServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/servlets/ControllerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/utils/validators/GraphValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/itmo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts/drawFigure.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts/validation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/exceptions/IncorrectRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/model/ShotResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/includes/_footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/includes/_header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/shot_result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/model/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/model/GraphShot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/servlets/AreaCheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/servlets/AreaCheckServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/servlets/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/servlets/ControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/utils/parsers/QueryStringParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/utils/parsers/QueryStringParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/utils/validators/GraphValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/utils/validators/GraphValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +41,7 @@
   &quot;isMigrated&quot;: true
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -79,6 +73,7 @@
       <recent name="C:\Users\SemPo\Desktop\ITMO\2 course\Web-programming\Labwork2\web_laba_2\src\main\webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SemPo\Desktop\ITMO\2 course\Web-programming\Labwork2\web_laba_2\src\main\webapp\templates" />
       <recent name="C:\Users\SemPo\Desktop\ITMO\2 course\Web-programming\Labwork2\web_laba_2\src\main\webapp" />
       <recent name="C:\Users\SemPo\Desktop\ITMO\2 course\Web-programming\Labwork2\web_laba_2\src\main" />
       <recent name="C:\Users\SemPo\Desktop\ITMO\2 course\Web-programming\Labwork2\web_laba_2\src\main\java\com\itmo\web_laba_2\model\validators" />
@@ -95,7 +90,7 @@
       <workItem from="1729925257040" duration="3160000" />
       <workItem from="1730043301293" duration="471000" />
       <workItem from="1730044161235" duration="13010000" />
-      <workItem from="1730299774741" duration="6963000" />
+      <workItem from="1730299774741" duration="25728000" />
     </task>
     <servers />
   </component>

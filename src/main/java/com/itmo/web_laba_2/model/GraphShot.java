@@ -1,11 +1,11 @@
 package com.itmo.web_laba_2.model;
 
-public class Graph {
+public class GraphShot {
     private double x;
     private double y;
     private double r;
 
-    public Graph(double x, double y, double r){
+    public GraphShot(double x, double y, double r){
         this.x = x;
         this.y = y;
         this.r = r;
