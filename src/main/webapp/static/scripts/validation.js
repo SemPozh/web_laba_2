@@ -1,12 +1,13 @@
-function validateYInput() {
+function validateYInput(){
     const yInput = document.getElementById("y-inp");
 
 
-    const regex = /^-?[0-2](\.\d+)?$/;
-    // Matches a number between 0 and 2, which can be negative,
-    // and may have an optional decimal part with up to 16 digits after the decimal point.
-    // Examples: "0", "1", "2", "-1.5", "0.123", "2.1234567890123456" (valid)
-    // Examples: "3", "-3.12345678901234567" (invalid)
+    // const regex = /^(?:-?[0-4](?:\.\d+)?|(?:-5|3)(?=\D))$/;
+    const regex = /^(([0-2](\.\d+)?)|(-[0-4](\.\d+)?))$/;
+    // Matches a number between -5 and 3, not inclusive,
+    // and may have an optional decimal part.
+    // Examples: "0", "1.421412", "2", "-4.9999", "-3.1", "2.1234567890123456" (valid)
+    // Examples: "3", "-5.12345678901234567" (invalid)
     if (yInput.value === ""){
         yInput.classList.remove("incorrect");
         return
@@ -20,22 +21,34 @@ function validateYInput() {
 }
 
 function validateRInput() {
-    const yInput = document.getElementById("y-inp");
+    const rInput = document.getElementById("r-inp");
 
-
-    const regex = /^-?[0-2](\.\d+)?$/;
-    // Matches a number between 0 and 2, which can be negative,
-    // and may have an optional decimal part with up to 16 digits after the decimal point.
-    // Examples: "0", "1", "2", "-1.5", "0.123", "2.1234567890123456" (valid)
-    // Examples: "3", "-3.12345678901234567" (invalid)
-    if (yInput.value === ""){
-        yInput.classList.remove("incorrect");
-        return
+    if (rInput.value === ""){
+        rInput.classList.remove("incorrect");
+        clearCanvas();
+        drawCoordinateLines();
+        return;
     }
 
-    if (regex.test(yInput.value)){
-        yInput.classList.remove("incorrect");
+
+
+    if (checkR(rInput.value)){
+        rInput.classList.remove("incorrect");
+        clearCanvas();
+        drawArea(parseFloat(rInput.value));
+        drawCoordinateLines();
     } else {
-        yInput.classList.add("incorrect");
+        rInput.classList.add("incorrect");
+        clearCanvas();
+        drawCoordinateLines();
     }
+}
+
+function checkR(rString){
+    const regex =/^((1\.0*[1-9]+[0-9]*)|([2-3]\.\d+)|([2-3]))$/;
+    // Matches a number between 1 and 4, not inclusive,
+    // and may have an optional decimal part.
+    // Examples: "1.2", "2", "3", "3.123", "2.1234567890123456" (valid)
+    // Examples: "4", "-3.123456789" (invalid)
+    return regex.test(rString) && parseFloat(rString)!==1
 }

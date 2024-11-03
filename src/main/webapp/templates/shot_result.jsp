@@ -1,6 +1,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.itmo.web_laba_2.model.ShotResult" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -38,15 +39,24 @@
                             <td><%= shots.get(shots.size()-1).getGraphShot().getX() %></td>
                             <td><%= shots.get(shots.size()-1).getGraphShot().getY() %></td>
                             <td><%= shots.get(shots.size()-1).getGraphShot().getR() %></td>
-                            <td><%= shots.get(shots.size()-1).isInArea() %></td>
+                            <td>
+                                <c:if test="${sessionScope.shost.get(sessionScope.shots.size()-1).isInArea()}">
+                                Попадание
+                                </c:if>
+
+                                <c:if test="${!sessionScope.shost.get(sessionScope.shots.size()-1).isInArea()}">
+                                    Промах
+                                </c:if>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-
-        <a href="${pageContext.request.contextPath}/main" class="back_button">Обратно</a>
+        <div id="backLinkWrapper">
+            <a href="${pageContext.request.contextPath}/main" class="back_button">Обратно</a>
+        </div>
         <%@include file="includes/_footer.jsp"%>
     </div>
 </body>

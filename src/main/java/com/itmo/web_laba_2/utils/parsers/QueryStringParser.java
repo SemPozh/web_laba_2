@@ -9,33 +9,36 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class QueryStringParser {
-    public static HashMap<String, Double> parseQuery(String query) throws IncorrectRequestException, ValidationException {
+    public static HashMap<String, Double> parseQuery(String query, boolean areaClick) throws IncorrectRequestException, ValidationException {
         HashMap<String, Double> resultMap = new HashMap<>();
-        if (query==null){
+        if (query == null) {
             return resultMap;
         }
 
         String[] queryParams = query.split("&");
-        for (String param : queryParams){
+        for (String param : queryParams) {
             String[] paramKeyValue = param.split("=");
-            if (paramKeyValue.length!=2){
+            if (paramKeyValue.length != 2) {
                 throw new IncorrectRequestException("Incorrect request parameters!");
             }
-            switch (paramKeyValue[0]){
+
+            switch (paramKeyValue[0]) {
                 case "x":
-                    resultMap.put("x", GraphValidator.validateXValue(Double.parseDouble(paramKeyValue[1])));
+                    resultMap.put("x", GraphValidator.validateXString(paramKeyValue[1], areaClick));
                     break;
                 case "y":
-                    resultMap.put("y", GraphValidator.validateXValue(Double.parseDouble(paramKeyValue[1])));
+                    resultMap.put("y", GraphValidator.validateYString(paramKeyValue[1], areaClick));
                     break;
                 case "r":
-                    resultMap.put("r", GraphValidator.validateXValue(Double.parseDouble(paramKeyValue[1])));
+                    resultMap.put("r", GraphValidator.validateRString(paramKeyValue[1]));
+                    break;
+                case "areaClick":
                     break;
                 default:
                     throw new IncorrectRequestException("Param '" + paramKeyValue[0] + "' is redundant");
             }
         }
-        if (resultMap.size()!=3){
+        if (resultMap.size() != 3) {
             throw new IncorrectRequestException("There are must be 3 params: x, y, r!");
         }
         return resultMap;

@@ -54,6 +54,12 @@
                         </div>
 
                         <div class="form_radio_btn">
+                            <input type="checkbox" value="0.5" class="r-choose_input checkbox_x" name="x"
+                                   id="checkbox-10">
+                            <label for="checkbox-4">0.5</label>
+                        </div>
+
+                        <div class="form_radio_btn">
                             <input type="checkbox" value="1" class="r-choose_input checkbox_x" name="x"
                                    id="checkbox-5">
                             <label for="checkbox-5">1</label>
@@ -81,7 +87,7 @@
                 <label id="r-label">Выберите R</label>
                 <div>
                     <input type="text" placeholder="Введите R в (1...4)" class="y-choose_input" id="r-inp"
-                           oninput="validateYInput()" name="r">
+                           oninput="validateRInput()" name="r">
                 </div>
 
                 <input type="submit" id="submitButton" value="Отправить">
@@ -100,12 +106,12 @@
             <div>
                 <table id="results">
                     <thead>
-                    <tr>
-                        <th>X</th>
-                        <th>Y</th>
-                        <th>R</th>
-                        <th>Попадание</th>
-                    </tr>
+                        <tr>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>R</th>
+                            <th>Попадание</th>
+                        </tr>
                     </thead>
                     <tbody>
                     <c:forEach var="shot" items="${sessionScope.shots}">
@@ -133,6 +139,7 @@
 </div>
 <script src="${pageContext.request.contextPath}/static/scripts/drawFigure.js"></script>
 <script src="${pageContext.request.contextPath}/static/scripts/validation.js"></script>
-<script src="${pageContext.request.contextPath}/static/scripts/ajax.js"></script>
+<script src="${pageContext.request.contextPath}/static/scripts/index.js"></script>
+<script src="${pageContext.request.contextPath}/static/scripts/areaClickHandler.js"></script>
 </body>
 </html>

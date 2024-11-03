@@ -33,6 +33,16 @@
         <url-pattern>/shot_result.jsp</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ErrorPageJSP</servlet-name>
+        <jsp-file>/templates/error.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ErrorPageJSP</servlet-name>
+        <url-pattern>/error.jsp</url-pattern>
+    </servlet-mapping>
+
 
     <servlet>
         <servlet-name>AreaCheckServlet</servlet-name>
