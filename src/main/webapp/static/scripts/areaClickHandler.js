@@ -1,3 +1,4 @@
+"use strict";
 async function sendAreaClickRequest(x, y, r) {
     const url = new URL('http://localhost:8080/lab2_app/main');
     url.searchParams.append('x', x);

@@ -16,6 +16,7 @@ import java.util.HashMap;
 public class ControllerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        req.setAttribute("fromController", "true");
         if (req.getParameterMap().isEmpty()){
             RequestDispatcher dispatcher = req.getRequestDispatcher("/templates/index.jsp");
             dispatcher.forward(req, resp);

@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33a0530b-837c-40f1-b485-d1311d3e0339" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts/areaClickHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/filters/AccessFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/error_404.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/servlets/AreaCheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/servlets/AreaCheckServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/servlets/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/servlets/ControllerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/utils/parsers/QueryStringParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/utils/parsers/QueryStringParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/utils/validators/GraphValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itmo/web_laba_2/utils/validators/GraphValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/scripts/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/scripts/areaClickHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts/areaClickHandler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/scripts/drawFigure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts/drawFigure.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/scripts/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/scripts/validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/shot_result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/shot_result.jsp" afterDir="false" />
     </list>
@@ -29,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Class" />
         <option value="Jsp File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -91,11 +92,22 @@
       <workItem from="1729925257040" duration="3160000" />
       <workItem from="1730043301293" duration="471000" />
       <workItem from="1730044161235" duration="13010000" />
-      <workItem from="1730299774741" duration="78853000" />
+      <workItem from="1730299774741" duration="98797000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/templates/index.jsp</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

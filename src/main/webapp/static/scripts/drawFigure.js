@@ -1,3 +1,4 @@
+"use strict";
 function drawArea(r) {
 // rectangle
     ctx.fillStyle = "#2130ff";

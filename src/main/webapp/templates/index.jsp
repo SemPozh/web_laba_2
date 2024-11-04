@@ -7,10 +7,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/styles/style.css">
-    <script
-            src="https://code.jquery.com/jquery-3.7.1.js"
-            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-            crossorigin="anonymous"></script>
     <title>Точечный выстрел</title>
 
 </head>
@@ -37,44 +33,44 @@
 
                         <div class="form_radio_btn">
                             <input type="checkbox" value="-1" class="r-choose_input checkbox_x" name="x"
-                                   id="checkbox-9">
-                            <label for="checkbox-9">-1</label>
+                                   id="checkbox-3">
+                            <label for="checkbox-3">-1</label>
                         </div>
 
                         <div class="form_radio_btn">
                             <input type="checkbox" value="-0.5" class="r-choose_input checkbox_x" name="x"
-                                   id="checkbox-3">
-                            <label for="checkbox-3">-0.5</label>
+                                   id="checkbox-4">
+                            <label for="checkbox-4">-0.5</label>
                         </div>
 
                         <div class="form_radio_btn">
                             <input type="checkbox" value="0" class="r-choose_input checkbox_x" name="x"
-                                   id="checkbox-4">
-                            <label for="checkbox-4">0</label>
+                                   id="checkbox-5">
+                            <label for="checkbox-5">0</label>
                         </div>
 
                         <div class="form_radio_btn">
                             <input type="checkbox" value="0.5" class="r-choose_input checkbox_x" name="x"
-                                   id="checkbox-10">
-                            <label for="checkbox-4">0.5</label>
+                                   id="checkbox-6">
+                            <label for="checkbox-6">0.5</label>
                         </div>
 
                         <div class="form_radio_btn">
                             <input type="checkbox" value="1" class="r-choose_input checkbox_x" name="x"
-                                   id="checkbox-5">
-                            <label for="checkbox-5">1</label>
+                                   id="checkbox-7">
+                            <label for="checkbox-7">1</label>
                         </div>
 
                         <div class="form_radio_btn">
                             <input type="checkbox" value="1.5" class="r-choose_input checkbox_x" name="x"
-                                   id="checkbox-6">
-                            <label for="checkbox-6">1.5</label>
+                                   id="checkbox-8">
+                            <label for="checkbox-8">1.5</label>
                         </div>
 
                         <div class="form_radio_btn">
                             <input type="checkbox" value="2" class="r-choose_input checkbox_x" name="x"
-                                   id="checkbox-7">
-                            <label for="checkbox-7">2</label>
+                                   id="checkbox-9">
+                            <label for="checkbox-9">2</label>
                         </div>
                     </div>
                 </div>
@@ -91,7 +87,8 @@
                 </div>
 
                 <input type="submit" id="submitButton" value="Отправить">
-                <p class="error_text">Некорректные значения в полях формы.</p>
+                <p class="error_text" id="Incorrect">Некорректные значения в полях формы.</p>
+                <p class="error_text" id="rNotSelectedError">r не выбран, невозвожно определить координаты</p>
             </form>
         </div>
 

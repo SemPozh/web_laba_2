@@ -14,37 +14,6 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>IndexJSP</servlet-name>
-        <jsp-file>/templates/index.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>IndexJSP</servlet-name>
-        <url-pattern>/index.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>ShotResultJSP</servlet-name>
-        <jsp-file>/templates/shot_result.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>ShotResultJSP</servlet-name>
-        <url-pattern>/shot_result.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>ErrorPageJSP</servlet-name>
-        <jsp-file>/templates/error.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>ErrorPageJSP</servlet-name>
-        <url-pattern>/error.jsp</url-pattern>
-    </servlet-mapping>
-
-
-    <servlet>
         <servlet-name>AreaCheckServlet</servlet-name>
         <servlet-class>com.itmo.web_laba_2.servlets.AreaCheckServlet</servlet-class>
     </servlet>
@@ -53,4 +22,30 @@
         <servlet-name>AreaCheckServlet</servlet-name>
         <url-pattern>/check</url-pattern>
     </servlet-mapping>
+
+
+<!--    filters-->
+
+    <filter>
+        <filter-name>AccessFilter</filter-name>
+        <filter-class>com.itmo.web_laba_2.filters.AccessFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AccessFilter</filter-name>
+        <url-pattern>/check</url-pattern>
+        <url-pattern>/templates/index.jsp</url-pattern>
+    </filter-mapping>
+
+
+    <!-- Обработка 404 ошибки -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/templates/error_404.jsp</location>
+    </error-page>
+
+    <!-- Обработка 403 ошибки -->
+    <error-page>
+        <error-code>403</error-code>
+        <location>/templates/error_404.jsp</location>
+    </error-page>
 </web-app>

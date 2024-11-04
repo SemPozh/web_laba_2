@@ -9,19 +9,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/styles/style.css">
-    <script
-            src="https://code.jquery.com/jquery-3.7.1.js"
-            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-            crossorigin="anonymous"></script>
     <title>Точечный выстрел</title>
 </head>
 <body>
     <div id="gridContainer">
         <%@include file="includes/_header.jsp"%>
-
-        <%
-            ArrayList<ShotResult> shots = (ArrayList<ShotResult>) session.getAttribute("shots");
-        %>
         <div id="data-table">
             <div class="gui-element" id="data-block">
                 <div>
@@ -35,20 +27,22 @@
                             </tr>
                         </thead>
                         <tbody>
+                        <c:forEach begin="1" end="${sessionScope.queriesCount}" var="i">
                         <tr>
-                            <td><%= shots.get(shots.size()-1).getGraphShot().getX() %></td>
-                            <td><%= shots.get(shots.size()-1).getGraphShot().getY() %></td>
-                            <td><%= shots.get(shots.size()-1).getGraphShot().getR() %></td>
+                            <td>${sessionScope.shots.get(sessionScope.shots.size()-i).getGraphShot().getX()}</td>
+                            <td>${sessionScope.shots.get(sessionScope.shots.size()-i).getGraphShot().getY()}</td>
+                            <td>${sessionScope.shots.get(sessionScope.shots.size()-i).getGraphShot().getR()}</td>
                             <td>
-                                <c:if test="${sessionScope.shost.get(sessionScope.shots.size()-1).isInArea()}">
-                                Попадание
+                                <c:if test="${sessionScope.shost.get(sessionScope.shots.size()-i).isInArea()}">
+                                    Попадание
                                 </c:if>
 
-                                <c:if test="${!sessionScope.shost.get(sessionScope.shots.size()-1).isInArea()}">
+                                <c:if test="${!sessionScope.shost.get(sessionScope.shots.size()-i).isInArea()}">
                                     Промах
                                 </c:if>
                             </td>
                         </tr>
+                        </c:forEach>
                         </tbody>
                     </table>
                 </div>

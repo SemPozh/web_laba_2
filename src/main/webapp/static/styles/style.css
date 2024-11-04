@@ -234,10 +234,6 @@ input.incorrect{
 }
 
 
-
-
-
-
 .form_radio_btn {
     display: inline-block;
     margin-right: 10px;
@@ -278,6 +274,7 @@ input.incorrect{
     color: #f74a81;
     font-size: 17px;
     display: none;
+    font-weight: bold;
 }
 
 
@@ -312,7 +309,6 @@ input.incorrect{
     border-radius: 8px;
     margin: 20px auto;
 }
-
 
 /* Data */
 #data-table{
